@@ -1,0 +1,7 @@
+* text=auto
+
+# Arquivos específicos como scripts e YAML
+*.sh text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.dockerfile text eol=lf

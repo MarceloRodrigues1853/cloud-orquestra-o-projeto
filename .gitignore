@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+.env
+
+# Docker
+*.log
+*.lock
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml~
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp

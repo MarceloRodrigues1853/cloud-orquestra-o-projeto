@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: permitir-apenas-pods-app
+spec:
+  podSelector:
+    matchLabels:
+      app: minha-app
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: minha-app
+
+# Comentário: Só permite entrada de dados de pods com mesma label
